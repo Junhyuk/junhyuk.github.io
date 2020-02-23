@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Junhyuk Lee"
-  avatar           : "/assets/image/bio_image.jpg" # path of avatar image, e.g. "/assets/images/bio_image.jpg"
+  avatar           : "https://user-images.githubusercontent.com/5698411/75115269-21cc1380-56a0-11ea-99ce-108123acbf12.png" # path of avatar image, e.g. "/assets/images/bio_image.jpg"
   bio              : "Dreamer & pioneer."
   location         : "Somewhere"
   email            :
