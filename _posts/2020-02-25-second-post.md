@@ -1,6 +1,6 @@
 title: "Quantization awareness training for Flownet"
 date: 2020-02-24 08:26:28 -0400
-categories: Introduction 
+categories: Study 
 ---
 
 the flownet is most popuar Neural Network model for differenct view from camera based on multi input. 
