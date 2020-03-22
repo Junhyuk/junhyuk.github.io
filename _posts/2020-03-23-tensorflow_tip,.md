@@ -14,8 +14,3 @@ dir_restore = 'model/20190703_01/model-5'
 
 sess.run(model.init_all)
 saver.restore(sess, dir_restore)
-
-
-<div>
-<img width = "950" src = "https://user-images.githubusercontent.com/5698411/75248950-88743d00-5818-11ea-903b-bcb3fc0c3dbd.png">
-</div>
