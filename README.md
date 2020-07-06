@@ -1,2 +1,2 @@
-# Junhyuk.github.io
+# codingblog.github.io
 webpage to introduce myself  
