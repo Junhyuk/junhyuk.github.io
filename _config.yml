@@ -107,15 +107,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Junhyuk Lee"
+  name             : "Benchmarking"
   avatar           : "https://user-images.githubusercontent.com/5698411/75115269-21cc1380-56a0-11ea-99ce-108123acbf12.png" # path of avatar image, e.g. "/assets/images/bio_image.jpg"
-  bio              : "Dreamer & pioneer."
+  bio              : "engineer & coder"
   location         : "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:junhyuk7.lee@gmail.com
+      url: mailto:carpediem.jun7@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
