@@ -1,2 +1,2 @@
 # codingblog.github.io
-webpage to introduce myself  
+webpage for coding andd development
