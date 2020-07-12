@@ -1,2 +1,2 @@
-# codingblog.github.io
+# junhyuk.github.io
 webpage for coding andd development
