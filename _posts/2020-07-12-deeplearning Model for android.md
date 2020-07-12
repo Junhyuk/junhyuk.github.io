@@ -1,4 +1,9 @@
 
+---
+title: "deeplearning Model for android.md"
+date: 2020-07-12 23:55:33 -0400
+categories: Study 
+---
 
 DeepLearning  관련해서 공부하면서 결과물을 눈으로 보고 확인하고 싶어서 Android App 으로 산출물을 만들었습니다.
 
