@@ -1,4 +1,3 @@
-
 ---
 title: "deeplearning Model for android.md"
 date: 2020-07-12 23:55:33 -0400
