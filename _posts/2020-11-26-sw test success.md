@@ -4,8 +4,10 @@ date: 2020-11-26 22:55:2 -0400
 categories: Study
 ---
 
-2019년 목표로 세웠던 내용 
+the flownet is most popuar Neural Network model for differenct view from camera based on multi input. 
+I would like to check out the result of the quantization difference of this model. 
 
+2019년 목표로 세웠던 내용 
 드여 2년만에 ..  sw certi pro 시험pass 로 취득 
 
 
