@@ -1,5 +1,5 @@
 ---
-title: "deeplearning Model for android.md"
+title: "deeplearning Model for android"
 date: 2020-07-12 23:55:33 -0400
 categories: Study
 ---
