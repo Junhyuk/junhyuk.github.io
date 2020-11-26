@@ -1,5 +1,5 @@
 ---
-title: "internal sw certification test.md"
+title: "internal sw certification test"
 date: 2020-11-26 22:55:2 -0400
 categories: Study
 ---
