@@ -160,6 +160,7 @@ include:
   - .htaccess
   - _pages
   - andong-market-support
+  - andong-cheonggwa-support
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
