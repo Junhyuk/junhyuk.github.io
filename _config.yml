@@ -161,6 +161,7 @@ include:
   - _pages
   - andong-market-support
   - andong-cheonggwa-support
+  - garakprice
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
