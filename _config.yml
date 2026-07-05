@@ -162,6 +162,7 @@ include:
   - andong-market-support
   - andong-cheonggwa-support
   - garakprice
+  - ai-face-studio
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
