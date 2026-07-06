@@ -1,0 +1,21 @@
+GitHub 저장소:
+https://github.com/Junhyuk/junhyuk.github.io
+
+추천 배포 폴더 구조:
+/hotdealmoa/index.html
+/hotdealmoa/support/index.html
+/hotdealmoa/privacy/index.html
+
+추천 URL:
+마케팅 페이지: https://junhyuk.github.io/hotdealmoa/
+지원 페이지: https://junhyuk.github.io/hotdealmoa/support/
+개인정보처리방침: https://junhyuk.github.io/hotdealmoa/privacy/
+
+업로드할 로컬 패키지 내 경로:
+hotdealmoa/index.html
+hotdealmoa/support/index.html
+hotdealmoa/privacy/index.html
+screenshots/iphone_6_9/
+screenshots/ipad_13/
+hotdealmoa_appstore_all_in_one.txt
+hotdealmoa_github_push_paths.txt
