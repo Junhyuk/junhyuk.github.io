@@ -163,6 +163,7 @@ include:
   - andong-cheonggwa-support
   - garakprice
   - ai-face-studio
+  - menu-suggestion
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
