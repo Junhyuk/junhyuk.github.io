@@ -11,85 +11,124 @@
   <header class="site-header"><div class="shell topbar">
     <a class="brand" href="/menu-suggestion/">Menu Suggestion AI</a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a aria-current="page" href="/menu-suggestion/">Marketing</a>
-      <a href="/menu-suggestion/support/">Support</a>
-      <a href="/menu-suggestion/privacy/">Privacy</a>
+      <a data-nav="marketing" data-path="/menu-suggestion/" aria-current="page" href="/menu-suggestion/">Marketing</a>
+      <a data-nav="support" data-path="/menu-suggestion/support/" href="/menu-suggestion/support/">Support</a>
+      <a data-nav="privacy" data-path="/menu-suggestion/privacy/" href="/menu-suggestion/privacy/">Privacy</a>
     </nav>
+    <div class="language-picker" role="group" aria-label="Language">
+      <button type="button" data-language="en">EN</button>
+      <button type="button" data-language="ko">한국어</button>
+    </div>
   </div></header>
 
   <main>
-    <div class="hero">
-      <div class="shell hero-grid">
-        <div>
-          <p class="eyebrow">On-device menu ideas</p>
-          <h1>Make today’s meal decision easier.</h1>
-          <p class="lead">Choose your meal time, dining style, and appetite. Menu Suggestion AI turns that context into a practical menu idea, a reason, and a small enjoyment tip.</p>
-          <div class="status">App Store launch in preparation</div>
-        </div>
-        <aside class="hero-art" aria-label="Menu Suggestion AI">
-          <h2>A calmer answer to “What should I eat?”</h2>
-          <p>Simple choices. Thoughtful menu ideas.</p>
-          <span class="pill">Weather · preferences · local generation</span>
-        </aside>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Enough context, without a long form.</h2>
-        <p class="section-intro">The main screen keeps the first choice simple. More Filters is there when you want to narrow a cuisine, spice level, or exclusion.</p>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon">1</div>
-            <h3>Pick the moment</h3>
-            <p>Set breakfast, lunch, or dinner; dine out or delivery; and light, normal, or hearty.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">2</div>
-            <h3>Make it yours</h3>
-            <p>Refine spice, cuisine, and exclusions without crowding the main screen.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">3</div>
-            <h3>See a useful answer</h3>
-            <p>Get one menu, a concise reason, a way to enjoy it, and two alternatives.</p>
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Designed for everyday choices.</h2>
-        <div class="split">
-          <div class="notice">
-            <h3>Private by design</h3>
-            <p>Core menu generation, preferences, Favorites, and history stay on your device. Weather and maps use the network only for those optional features.</p>
+    <section class="localized" data-locale="en" data-title="Menu Suggestion AI — What should I eat today?">
+      <div class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">On-device menu ideas</p>
+            <h1>Make today’s meal decision easier.</h1>
+            <p class="lead">Choose your meal time, dining style, and appetite. Menu Suggestion AI turns that context into a practical menu idea, a reason, and a small enjoyment tip.</p>
+            <div class="status">App Store launch in preparation</div>
           </div>
-          <div class="notice">
-            <h3>Nearby means real places</h3>
-            <p>After you choose Find nearby restaurants, Apple Maps searches for real places. You can open a result in Apple Maps or Google Maps. The app does not invent businesses or routes.</p>
+          <aside class="hero-art" aria-label="Menu Suggestion AI">
+            <h2>A calmer answer to “What should I eat?”</h2>
+            <p>Simple choices. Thoughtful menu ideas.</p>
+            <span class="pill">Weather · preferences · local generation</span>
+          </aside>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>Enough context, without a long form.</h2>
+          <p class="section-intro">The main screen keeps the first choice simple. More Filters is there when you want to narrow a cuisine, spice level, or exclusion.</p>
+          <div class="card-grid">
+            <article class="card"><div class="card-icon">1</div><h3>Pick the moment</h3><p>Set breakfast, lunch, or dinner; dine out or delivery; and light, normal, or hearty.</p></article>
+            <article class="card"><div class="card-icon">2</div><h3>Make it yours</h3><p>Refine spice, cuisine, and exclusions without crowding the main screen.</p></article>
+            <article class="card"><div class="card-icon">3</div><h3>See a useful answer</h3><p>Get one menu, a concise reason, a way to enjoy it, and two alternatives.</p></article>
           </div>
         </div>
-        <div class="callout amber"><strong>Suggested devices:</strong> Best experience on iPhone 15 or later, iPad with M1 or later, and Apple silicon Mac with M1 or later. iOS 17 or later remains supported.</div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>See the flow.</h2>
-        <p class="section-intro">These are real SwiftUI states captured from the app’s deterministic release-image fixture. No personal location or raw model response is shown.</p>
-        <div class="gallery">
-          <figure class="shot"><img src="assets/screenshots/en/01-main.jpg" alt="Make today’s meal decision easier"><figcaption>Make today’s meal decision easier</figcaption></figure>
-          <figure class="shot"><img src="assets/screenshots/en/02-filters.jpg" alt="Fine-tune a meal in a few taps"><figcaption>Fine-tune a meal in a few taps</figcaption></figure>
-          <figure class="shot"><img src="assets/screenshots/en/03-weather.jpg" alt="Consider the weather when available"><figcaption>Consider the weather when available</figcaption></figure>
-          <figure class="shot"><img src="assets/screenshots/en/04-result.jpg" alt="See a reason and an enjoyment tip"><figcaption>See a reason and an enjoyment tip</figcaption></figure>
-          <figure class="shot"><img src="assets/screenshots/en/05-favorites.jpg" alt="Keep go-to menus close"><figcaption>Keep go-to menus close</figcaption></figure>
-          <figure class="shot"><img src="assets/screenshots/en/06-map.jpg" alt="Find nearby restaurants in Apple Maps or Google Maps"><figcaption>Find nearby restaurants in Apple Maps or Google Maps</figcaption></figure>
+      <div class="section">
+        <div class="shell">
+          <h2>Designed for everyday choices.</h2>
+          <div class="split">
+            <div class="notice"><h3>Private by design</h3><p>Core menu generation, preferences, Favorites, and history stay on your device. Weather and maps use the network only for those optional features.</p></div>
+            <div class="notice"><h3>Nearby means real places</h3><p>After you choose Find nearby restaurants, Apple Maps searches for real places. You can open a result in Apple Maps or Google Maps. The app does not invent businesses or routes.</p></div>
+          </div>
+          <div class="callout amber"><strong>Suggested devices:</strong> Best experience on iPhone 15 or later, iPad with M1 or later, and Apple silicon Mac with M1 or later. iOS 17 or later remains supported.</div>
         </div>
       </div>
-    </div>
+      <div class="section">
+        <div class="shell">
+          <h2>See the flow.</h2>
+          <p class="section-intro">These are real SwiftUI states captured from the app’s deterministic release-image fixture. No personal location or raw model response is shown.</p>
+          <div class="gallery">
+            <figure class="shot"><img data-screenshot="main" src="assets/screenshots/en/01-main.jpg" alt="Make today’s meal decision easier"><figcaption data-caption>Make today’s meal decision easier</figcaption></figure>
+            <figure class="shot"><img data-screenshot="filters" src="assets/screenshots/en/02-filters.jpg" alt="Fine-tune a meal in a few taps"><figcaption data-caption>Fine-tune a meal in a few taps</figcaption></figure>
+            <figure class="shot"><img data-screenshot="weather" src="assets/screenshots/en/03-weather.jpg" alt="Consider the weather when available"><figcaption data-caption>Consider the weather when available</figcaption></figure>
+            <figure class="shot"><img data-screenshot="result" src="assets/screenshots/en/04-result.jpg" alt="See a reason and an enjoyment tip"><figcaption data-caption>See a reason and an enjoyment tip</figcaption></figure>
+            <figure class="shot"><img data-screenshot="favorites" src="assets/screenshots/en/05-favorites.jpg" alt="Keep go-to menus close"><figcaption data-caption>Keep go-to menus close</figcaption></figure>
+            <figure class="shot"><img data-screenshot="map" src="assets/screenshots/en/06-map.jpg" alt="Find nearby restaurants in Apple Maps or Google Maps"><figcaption data-caption>Find nearby restaurants in Apple Maps or Google Maps</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="localized" data-locale="ko" data-title="Menu Suggestion AI — 오늘 뭐 먹지?" hidden>
+      <div class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">기기 내 메뉴 추천</p>
+            <h1>오늘 먹을 메뉴를 더 쉽게 정하세요.</h1>
+            <p class="lead">식사 시간, 식사 방식, 식사량을 고르면 Menu Suggestion AI가 실용적인 메뉴와 이유, 맛있게 먹는 작은 팁을 제안합니다.</p>
+            <div class="status">App Store 출시 준비 중</div>
+          </div>
+          <aside class="hero-art" aria-label="Menu Suggestion AI">
+            <h2>“오늘 뭐 먹지?”에 차분한 답을.</h2>
+            <p>간단한 선택, 신중한 메뉴 아이디어.</p>
+            <span class="pill">날씨 · 취향 · 기기 내 생성</span>
+          </aside>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>긴 설문 없이도 필요한 조건만.</h2>
+          <p class="section-intro">메인 화면은 첫 선택을 단순하게 유지합니다. 음식 종류, 맵기, 제외 음식을 좁히려면 More Filters를 사용합니다.</p>
+          <div class="card-grid">
+            <article class="card"><div class="card-icon">1</div><h3>언제 먹나요?</h3><p>아침, 점심, 저녁; 외식 또는 배달; 가볍게, 보통, 든든하게를 고릅니다.</p></article>
+            <article class="card"><div class="card-icon">2</div><h3>내 취향에 맞추기</h3><p>메인 화면을 복잡하게 만들지 않고 맵기, 음식 종류, 제외 음식을 조정합니다.</p></article>
+            <article class="card"><div class="card-icon">3</div><h3>쓸모 있는 답 확인</h3><p>대표 메뉴, 짧은 이유, 맛있게 먹는 방법, 대체 메뉴 두 가지를 보여줍니다.</p></article>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>매일의 선택을 위해 만들었습니다.</h2>
+          <div class="split">
+            <div class="notice"><h3>개인정보를 우선합니다</h3><p>핵심 메뉴 생성, 선호, 즐겨찾기, 기록은 기기에 남습니다. 날씨와 지도는 해당 선택 기능에서만 네트워크를 사용합니다.</p></div>
+            <div class="notice"><h3>주변 식당은 실제 장소입니다</h3><p>주변 식당 찾기를 선택한 뒤 Apple Maps가 실제 장소를 검색합니다. 결과는 Apple Maps 또는 Google Maps에서 열 수 있습니다. 앱은 식당이나 경로를 만들어 내지 않습니다.</p></div>
+          </div>
+          <div class="callout amber"><strong>권장 기기:</strong> iPhone 15 이상, M1 이상 iPad, M1 이상 Apple silicon Mac에서 최적의 경험을 제공합니다. iOS 17 이상은 계속 지원합니다.</div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>앱 흐름을 확인하세요.</h2>
+          <p class="section-intro">실제 SwiftUI 화면을 deterministic release-image fixture로 캡처했습니다. 개인 위치나 원문 모델 응답은 보여주지 않습니다.</p>
+          <div class="gallery">
+            <figure class="shot"><img data-screenshot="main" src="assets/screenshots/ko/01-main.jpg" alt="오늘 먹을 메뉴를 더 쉽게 정하세요"><figcaption data-caption>오늘 먹을 메뉴를 더 쉽게 정하세요</figcaption></figure>
+            <figure class="shot"><img data-screenshot="filters" src="assets/screenshots/ko/02-filters.jpg" alt="몇 번의 탭으로 취향을 맞추기"><figcaption data-caption>몇 번의 탭으로 취향을 맞추기</figcaption></figure>
+            <figure class="shot"><img data-screenshot="weather" src="assets/screenshots/ko/03-weather.jpg" alt="가능한 경우 날씨도 고려"><figcaption data-caption>가능한 경우 날씨도 고려</figcaption></figure>
+            <figure class="shot"><img data-screenshot="result" src="assets/screenshots/ko/04-result.jpg" alt="이유와 맛있게 먹는 팁 확인"><figcaption data-caption>이유와 맛있게 먹는 팁 확인</figcaption></figure>
+            <figure class="shot"><img data-screenshot="favorites" src="assets/screenshots/ko/05-favorites.jpg" alt="자주 찾는 메뉴를 가까이"><figcaption data-caption>자주 찾는 메뉴를 가까이</figcaption></figure>
+            <figure class="shot"><img data-screenshot="map" src="assets/screenshots/ko/06-map.jpg" alt="Apple Maps 또는 Google Maps에서 주변 식당 찾기"><figcaption data-caption>Apple Maps 또는 Google Maps에서 주변 식당 찾기</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer"><div class="shell footer-grid"><span>© 2026 DGY Creative Lab</span><span><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></span></div></footer>
+  <script src="app.js"></script>
 </body>
 </html>

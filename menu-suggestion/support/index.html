@@ -11,68 +11,126 @@
   <header class="site-header"><div class="shell topbar">
     <a class="brand" href="/menu-suggestion/">Menu Suggestion AI</a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/menu-suggestion/">Marketing</a>
-      <a aria-current="page" href="/menu-suggestion/support/">Support</a>
-      <a href="/menu-suggestion/privacy/">Privacy</a>
+      <a data-nav="marketing" data-path="/menu-suggestion/" href="/menu-suggestion/">Marketing</a>
+      <a data-nav="support" data-path="/menu-suggestion/support/" aria-current="page" href="/menu-suggestion/support/">Support</a>
+      <a data-nav="privacy" data-path="/menu-suggestion/privacy/" href="/menu-suggestion/privacy/">Privacy</a>
     </nav>
+    <div class="language-picker" role="group" aria-label="Language">
+      <button type="button" data-language="en">EN</button>
+      <button type="button" data-language="ko">한국어</button>
+    </div>
   </div></header>
 
   <main>
-    <div class="hero">
-      <div class="shell hero-grid">
-        <div>
-          <p class="eyebrow">Support</p>
-          <h1>We’re here to help.</h1>
-          <p class="lead">For a bug report, feature idea, or account-free app support, email us with the details below.</p>
-          <p class="contact"><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></p>
+    <section class="localized" data-locale="en" data-title="Menu Suggestion AI — Support">
+      <div class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">Support</p>
+            <h1>We’re here to help.</h1>
+            <p class="lead">For a bug report, feature idea, or account-free app support, email us with the details below.</p>
+            <p class="contact"><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></p>
+          </div>
+          <aside class="hero-art">
+            <h2>Simple details make support faster.</h2>
+            <p>Tell us what happened, not any private prompt or location.</p>
+            <span class="pill">DGY Creative Lab</span>
+          </aside>
         </div>
-        <aside class="hero-art">
-          <h2>Simple details make support faster.</h2>
-          <p>Tell us what happened, not any private prompt or location.</p>
-          <span class="pill">DGY Creative Lab</span>
-        </aside>
       </div>
-    </div>
+      <div class="section">
+        <div class="shell split">
+          <section class="support-card">
+            <h3>Include these details</h3>
+            <ul class="list">
+              <li>Device model</li>
+              <li>iOS, iPadOS, or macOS version</li>
+              <li>App version and build number</li>
+              <li>What you expected and what happened</li>
+              <li>Steps to reproduce the issue</li>
+              <li>A screenshot with personal information removed, if useful</li>
+            </ul>
+          </section>
+          <section class="support-card">
+            <h3>Before you write</h3>
+            <p>Do not send your precise location, full prompt, or private information. The app does not need an account, so there is no password or account recovery process.</p>
+          </section>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>Frequently asked questions</h2>
+          <details class="faq"><summary>Does the app need an account?</summary><p>No. Menu suggestions, Favorites, and recommendation history are designed to work without signing in.</p></details>
+          <details class="faq"><summary>Why is weather unavailable?</summary><p>Weather is optional. Location permission may be denied, WeatherKit may be unavailable, or the fallback request may fail. You can still receive a menu recommendation.</p></details>
+          <details class="faq"><summary>Why does the app ask for location at launch?</summary><p>With permission, current location is used only to personalize weather for the first recommendation. The app can continue if you deny permission.</p></details>
+          <details class="faq"><summary>How do I find nearby restaurants?</summary><p>First receive a menu suggestion, then choose Find nearby restaurants. Apple Maps searches for real places. You can open a result in Apple Maps or Google Maps. Map availability depends on network and local map coverage.</p></details>
+          <details class="faq"><summary>Why can model preparation take time?</summary><p>The app prepares an on-device GGUF model. The first use can take longer than later recommendations, especially when the device is busy or under memory pressure.</p></details>
+          <details class="faq"><summary>How can I report an unsuitable menu?</summary><p>Use More Filters to set exclusions first, then email the menu, your selected conditions, and the app version. Do not include sensitive health information.</p></details>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>Open source notices</h2>
+          <p class="legal">The app uses <a href="https://github.com/ggml-org/llama.cpp/blob/master/LICENSE" rel="noopener noreferrer">llama.cpp (MIT License)</a>. The bundled Qwen GGUF model reports Apache-2.0 metadata; see the <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer">Apache License 2.0</a>. Final in-app notices remain part of the release gate.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="section">
-      <div class="shell split">
-        <section class="support-card">
-          <h3>Include these details</h3>
-          <ul class="list">
-            <li>Device model</li>
-            <li>iOS, iPadOS, or macOS version</li>
-            <li>App version and build number</li>
-            <li>What you expected and what happened</li>
-            <li>Steps to reproduce the issue</li>
-            <li>A screenshot with personal information removed, if useful</li>
-          </ul>
-        </section>
-        <section class="support-card">
-          <h3>Before you write</h3>
-          <p>Do not send your precise location, full prompt, or private information. The app does not need an account, so there is no password or account recovery process.</p>
-        </section>
+    <section class="localized" data-locale="ko" data-title="Menu Suggestion AI — 고객 지원" hidden>
+      <div class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">고객 지원</p>
+            <h1>도움을 드리겠습니다.</h1>
+            <p class="lead">오류 제보, 기능 제안, 계정 없는 앱 지원은 아래 정보와 함께 이메일로 보내 주세요.</p>
+            <p class="contact"><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></p>
+          </div>
+          <aside class="hero-art">
+            <h2>간단한 정보가 더 빠른 지원을 만듭니다.</h2>
+            <p>개인 위치나 원문 프롬프트 대신, 발생한 상황을 알려 주세요.</p>
+            <span class="pill">DGY Creative Lab</span>
+          </aside>
+        </div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Frequently asked questions</h2>
-        <details class="faq"><summary>Does the app need an account?</summary><p>No. Menu suggestions, Favorites, and recommendation history are designed to work without signing in.</p></details>
-        <details class="faq"><summary>Why is weather unavailable?</summary><p>Weather is optional. Location permission may be denied, WeatherKit may be unavailable, or the fallback request may fail. You can still receive a menu recommendation.</p></details>
-        <details class="faq"><summary>Why does the app ask for location at launch?</summary><p>With permission, current location is used only to personalize weather for the first recommendation. The app can continue if you deny permission.</p></details>
-        <details class="faq"><summary>How do I find nearby restaurants?</summary><p>First receive a menu suggestion, then choose Find nearby restaurants. Apple Maps searches for real places. You can open a result in Apple Maps or Google Maps. Map availability depends on network and local map coverage.</p></details>
-        <details class="faq"><summary>Why can model preparation take time?</summary><p>The app prepares an on-device GGUF model. The first use can take longer than later recommendations, especially when the device is busy or under memory pressure.</p></details>
-        <details class="faq"><summary>How can I report an unsuitable menu?</summary><p>Use More Filters to set exclusions first, then email the menu, your selected conditions, and the app version. Do not include sensitive health information.</p></details>
+      <div class="section">
+        <div class="shell split">
+          <section class="support-card">
+            <h3>문의에 포함해 주세요</h3>
+            <ul class="list">
+              <li>기기 모델</li>
+              <li>iOS, iPadOS 또는 macOS 버전</li>
+              <li>앱 버전과 빌드 번호</li>
+              <li>기대한 결과와 실제 발생한 결과</li>
+              <li>문제 재현 단계</li>
+              <li>필요한 경우 개인정보를 가린 화면 캡처</li>
+            </ul>
+          </section>
+          <section class="support-card">
+            <h3>문의 전 안내</h3>
+            <p>정확한 위치, 전체 프롬프트, 개인정보는 보내지 마세요. 계정이 필요 없는 앱이므로 비밀번호나 계정 복구 절차도 없습니다.</p>
+          </section>
+        </div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Open source notices</h2>
-        <p class="legal">The app uses <a href="https://github.com/ggml-org/llama.cpp/blob/master/LICENSE" rel="noopener noreferrer">llama.cpp (MIT License)</a>. The bundled Qwen GGUF model reports Apache-2.0 metadata; see the <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer">Apache License 2.0</a>. Final in-app notices remain part of the release gate.</p>
+      <div class="section">
+        <div class="shell">
+          <h2>자주 묻는 질문</h2>
+          <details class="faq"><summary>계정이 필요한가요?</summary><p>아니요. 메뉴 추천, 즐겨찾기, 추천 기록은 로그인 없이 사용할 수 있도록 설계했습니다.</p></details>
+          <details class="faq"><summary>날씨를 가져오지 못하는 이유는 무엇인가요?</summary><p>날씨는 선택 기능입니다. 위치 권한 거부, WeatherKit 이용 불가, 보조 요청 실패가 발생할 수 있지만 메뉴 추천은 계속 받을 수 있습니다.</p></details>
+          <details class="faq"><summary>왜 앱 시작 시 위치 권한을 요청하나요?</summary><p>권한이 허용된 경우 첫 추천의 날씨 개인화에만 현재 위치를 사용합니다. 권한을 거부해도 앱은 계속 사용할 수 있습니다.</p></details>
+          <details class="faq"><summary>주변 식당은 어떻게 찾나요?</summary><p>메뉴 추천을 받은 뒤 주변 식당 찾기를 선택하세요. Apple Maps가 실제 장소를 검색합니다. 결과는 Apple Maps 또는 Google Maps에서 열 수 있습니다. 네트워크와 지역 지도 데이터에 따라 결과가 달라질 수 있습니다.</p></details>
+          <details class="faq"><summary>모델 준비 시간이 오래 걸리는 이유는 무엇인가요?</summary><p>기기 내 GGUF 모델을 준비하기 때문입니다. 첫 실행은 이후 추천보다 오래 걸릴 수 있고, 기기 사용량이나 메모리 상태의 영향을 받을 수 있습니다.</p></details>
+          <details class="faq"><summary>원하지 않는 메뉴를 신고하려면 어떻게 하나요?</summary><p>먼저 More Filters에서 제외 음식을 설정한 뒤, 메뉴와 선택 조건, 앱 버전을 이메일로 알려 주세요. 민감한 건강 정보는 보내지 마세요.</p></details>
+        </div>
       </div>
-    </div>
+      <div class="section">
+        <div class="shell">
+          <h2>오픈 소스 고지</h2>
+          <p class="legal">앱은 <a href="https://github.com/ggml-org/llama.cpp/blob/master/LICENSE" rel="noopener noreferrer">llama.cpp(MIT License)</a>를 사용합니다. 번들 Qwen GGUF 모델은 Apache-2.0 메타데이터를 보고합니다. <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="noopener noreferrer">Apache License 2.0</a>을 확인해 주세요. 최종 앱 내 고지는 별도 출시 게이트에서 확인합니다.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer"><div class="shell footer-grid"><span>© 2026 DGY Creative Lab</span><span><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></span></div></footer>
+  <script src="../app.js"></script>
 </body>
 </html>

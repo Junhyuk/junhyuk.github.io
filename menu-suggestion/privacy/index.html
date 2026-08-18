@@ -11,81 +11,120 @@
   <header class="site-header"><div class="shell topbar">
     <a class="brand" href="/menu-suggestion/">Menu Suggestion AI</a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/menu-suggestion/">Marketing</a>
-      <a href="/menu-suggestion/support/">Support</a>
-      <a aria-current="page" href="/menu-suggestion/privacy/">Privacy</a>
+      <a data-nav="marketing" data-path="/menu-suggestion/" href="/menu-suggestion/">Marketing</a>
+      <a data-nav="support" data-path="/menu-suggestion/support/" href="/menu-suggestion/support/">Support</a>
+      <a data-nav="privacy" data-path="/menu-suggestion/privacy/" aria-current="page" href="/menu-suggestion/privacy/">Privacy</a>
     </nav>
+    <div class="language-picker" role="group" aria-label="Language">
+      <button type="button" data-language="en">EN</button>
+      <button type="button" data-language="ko">한국어</button>
+    </div>
   </div></header>
 
   <main>
-    <div class="hero">
-      <div class="shell">
-        <p class="eyebrow">Privacy Policy</p>
-        <h1>Clear about what stays on your device.</h1>
-        <p class="lead">Effective date: August 18, 2026. This policy explains the data handling of Menu Suggestion AI by DGY Creative Lab.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="shell split">
-        <article class="support-card">
-          <h3>On-device data</h3>
-          <p>Menu prompts, generated menu suggestions, preferences, Favorites, and recommendation history are processed or stored on the device. The developer does not receive them.</p>
-        </article>
-        <article class="support-card">
-          <h3>No account or advertising SDK</h3>
-          <p>The current iOS app does not require an account and does not include a remote LLM, analytics SDK, or advertising SDK.</p>
-        </article>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Location, weather, and maps</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Optional location</h3>
-            <p>The app may ask for when-in-use location permission at launch to personalize weather. Denying permission does not disable menu recommendation.</p>
-          </article>
-          <article class="card">
-            <h3>Weather request</h3>
-            <p>When permission and a location are available, coordinates are used in a weather request. WeatherKit is tried first; Open-Meteo may be used only as a fallback. The app does not keep location history.</p>
-          </article>
-          <article class="card">
-            <h3>Nearby restaurants</h3>
-            <p>Apple MapKit is used only after you choose Find nearby restaurants. It searches real places around a current location or an area you enter. You can open a result in Apple Maps or Google Maps.</p>
-          </article>
+    <section class="localized" data-locale="en" data-title="Menu Suggestion AI — Privacy Policy">
+      <div class="hero">
+        <div class="shell">
+          <p class="eyebrow">Privacy Policy</p>
+          <h1>Clear about what stays on your device.</h1>
+          <p class="lead">Effective date: August 18, 2026. This policy explains the data handling of Menu Suggestion AI by DGY Creative Lab.</p>
         </div>
-        <p class="note">WeatherKit, Open-Meteo, Apple Maps, and Google Maps process those requests under their own policies. This app does not send prompt text, Favorites, or recommendation history with weather or map-search requests. If you choose Google Maps, the restaurant name and coordinates are sent to Google to open that place.</p>
       </div>
-    </div>
+      <div class="section">
+        <div class="shell split">
+          <article class="support-card"><h3>On-device data</h3><p>Menu prompts, generated menu suggestions, preferences, Favorites, and recommendation history are processed or stored on the device. The developer does not receive them.</p></article>
+          <article class="support-card"><h3>No account or advertising SDK</h3><p>The current iOS app does not require an account and does not include a remote LLM, analytics SDK, or advertising SDK.</p></article>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>Location, weather, and maps</h2>
+          <div class="card-grid">
+            <article class="card"><h3>Optional location</h3><p>The app may ask for when-in-use location permission at launch to personalize weather. Denying permission does not disable menu recommendation.</p></article>
+            <article class="card"><h3>Weather request</h3><p>When permission and a location are available, coordinates are used in a weather request. WeatherKit is tried first; Open-Meteo may be used only as a fallback. The app does not keep location history.</p></article>
+            <article class="card"><h3>Nearby restaurants</h3><p>Apple MapKit is used only after you choose Find nearby restaurants. It searches real places around a current location or an area you enter. You can open a result in Apple Maps or Google Maps.</p></article>
+          </div>
+          <p class="note">WeatherKit, Open-Meteo, Apple Maps, and Google Maps process those requests under their own policies. This app does not send prompt text, Favorites, or recommendation history with weather or map-search requests. If you choose Google Maps, the restaurant name and coordinates are sent to Google to open that place.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell split">
+          <section>
+            <h2>Your choices</h2>
+            <ul class="list">
+              <li>Change location access at any time in iOS, iPadOS, or macOS settings.</li>
+              <li>Delete Favorites and recommendation history inside the app.</li>
+              <li>Do not grant location permission; core menu recommendation remains available.</li>
+              <li>Contact us with privacy questions or requests.</li>
+            </ul>
+          </section>
+          <section class="notice">
+            <h3>Support contact</h3>
+            <p>For privacy questions, email <a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a>.</p>
+            <p class="note">If you send email, your email address and message are used only to respond to your request and keep the support record as needed.</p>
+          </section>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>Policy changes</h2>
+          <p class="section-intro">We may update this policy when app behavior, service providers, or legal requirements change. The effective date above will be updated with a revised policy.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="section">
-      <div class="shell split">
-        <section>
-          <h2>Your choices</h2>
-          <ul class="list">
-            <li>Change location access at any time in iOS, iPadOS, or macOS settings.</li>
-            <li>Delete Favorites and recommendation history inside the app.</li>
-            <li>Do not grant location permission; core menu recommendation remains available.</li>
-            <li>Contact us with privacy questions or requests.</li>
-          </ul>
-        </section>
-        <section class="notice">
-          <h3>Support contact</h3>
-          <p>For privacy questions, email <a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a>.</p>
-          <p class="note">If you send email, your email address and message are used only to respond to your request and keep the support record as needed.</p>
-        </section>
+    <section class="localized" data-locale="ko" data-title="Menu Suggestion AI — 개인정보 처리방침" hidden>
+      <div class="hero">
+        <div class="shell">
+          <p class="eyebrow">개인정보 처리방침</p>
+          <h1>어떤 정보가 기기에 남는지 명확하게 안내합니다.</h1>
+          <p class="lead">시행일: 2026년 8월 18일. 본 방침은 DGY Creative Lab의 Menu Suggestion AI 정보 처리 방식을 설명합니다.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="shell">
-        <h2>Policy changes</h2>
-        <p class="section-intro">We may update this policy when app behavior, service providers, or legal requirements change. The effective date above will be updated with a revised policy.</p>
+      <div class="section">
+        <div class="shell split">
+          <article class="support-card"><h3>기기 내 데이터</h3><p>메뉴 프롬프트, 생성된 메뉴 추천, 선호, 즐겨찾기, 추천 기록은 기기에서 처리되거나 저장됩니다. 개발자는 이를 받지 않습니다.</p></article>
+          <article class="support-card"><h3>계정·광고 SDK 없음</h3><p>현재 iOS 앱은 계정을 요구하지 않으며, 원격 LLM, 분석 SDK, 광고 SDK를 포함하지 않습니다.</p></article>
+        </div>
       </div>
-    </div>
+      <div class="section">
+        <div class="shell">
+          <h2>위치, 날씨, 지도</h2>
+          <div class="card-grid">
+            <article class="card"><h3>선택적 위치</h3><p>앱 시작 시 날씨 개인화를 위해 ‘앱을 사용하는 동안’ 위치 권한을 요청할 수 있습니다. 권한을 거부해도 메뉴 추천은 사용할 수 있습니다.</p></article>
+            <article class="card"><h3>날씨 요청</h3><p>권한과 위치가 있는 경우 좌표로 날씨를 요청합니다. WeatherKit을 먼저 사용하고, 필요한 경우에만 Open-Meteo를 보조로 사용합니다. 앱은 위치 기록을 저장하지 않습니다.</p></article>
+            <article class="card"><h3>주변 식당</h3><p>Apple MapKit은 사용자가 주변 식당 찾기를 선택한 뒤에만 사용됩니다. 현재 위치 또는 입력한 지역 주변의 실제 장소를 검색합니다. 결과는 Apple Maps 또는 Google Maps에서 열 수 있습니다.</p></article>
+          </div>
+          <p class="note">WeatherKit, Open-Meteo, Apple Maps, Google Maps는 각자의 정책에 따라 해당 요청을 처리합니다. 앱은 날씨 또는 지도 검색 요청에 프롬프트 원문, 즐겨찾기, 추천 기록을 함께 보내지 않습니다. Google Maps를 선택하면 해당 장소를 열기 위해 식당 이름과 좌표가 Google로 전달됩니다.</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell split">
+          <section>
+            <h2>사용자 선택권</h2>
+            <ul class="list">
+              <li>iOS, iPadOS 또는 macOS 설정에서 언제든 위치 권한을 변경할 수 있습니다.</li>
+              <li>앱에서 즐겨찾기와 추천 기록을 삭제할 수 있습니다.</li>
+              <li>위치 권한을 주지 않아도 핵심 메뉴 추천은 사용할 수 있습니다.</li>
+              <li>개인정보 관련 문의나 요청은 이메일로 보낼 수 있습니다.</li>
+            </ul>
+          </section>
+          <section class="notice">
+            <h3>개인정보 문의</h3>
+            <p>개인정보 문의는 <a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a>으로 보내 주세요.</p>
+            <p class="note">이메일을 보내면 이메일 주소와 메시지는 문의에 답변하고 필요한 지원 기록을 유지하기 위해서만 사용됩니다.</p>
+          </section>
+        </div>
+      </div>
+      <div class="section">
+        <div class="shell">
+          <h2>방침 변경</h2>
+          <p class="section-intro">앱 동작, 서비스 제공자 또는 법적 요구사항이 바뀌면 본 방침을 갱신할 수 있습니다. 변경된 방침에는 위의 시행일을 표시합니다.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer"><div class="shell footer-grid"><span>© 2026 DGY Creative Lab</span><span><a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></span></div></footer>
+  <script src="../app.js"></script>
 </body>
 </html>
