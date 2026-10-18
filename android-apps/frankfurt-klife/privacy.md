@@ -7,7 +7,7 @@ author_profile: false
 
 # Frankfurt K-Life 개인정보처리방침
 
-시행일: 2026년 10월 12일
+개정일: 2026년 10월 18일. 아래 Firebase 고지는 이 패키지의 Firebase 연동이 포함된 첫 Google Play 버전부터 적용됩니다.
 
 DGY Creative Lab이 제공하는 Android 앱 Frankfurt K-Life
 (`com.frankfurt.klife`)에 적용됩니다.
@@ -36,9 +36,13 @@ IP 주소 등 접속 정보를 자체 정책에 따라 처리할 수 있습니�
 엽니다. 외부 서비스의 권한, 로그인, 쿠키와 접속 기록은 각 제공처의 정책이
 적용됩니다. 관련 안내: [Google 개인정보처리방침](https://policies.google.com/privacy).
 
-앱에는 광고 SDK, 광고 ID 수집, 분석 SDK, 개발자 서버로 보내는 자동 충돌
-보고 기능이 없습니다. Google Play와 Android 자체 서비스의 처리는 해당
-서비스의 정책에 따릅니다.
+Firebase 연동 전 버전에는 광고 SDK, 광고 ID 수집, 분석 SDK 또는 개발자 서버로 보내는 자동 충돌 보고 기능이 없습니다. Firebase 연동이 포함된 첫 Google Play 버전부터는 아래 선택적 사용 분석 및 오류 진단 고지가 적용됩니다. Google Play와 Android 자체 서비스의 처리에는 해당 서비스의 정책이 적용됩니다.
+
+## 선택적인 Firebase 사용 분석과 오류 진단
+
+Firebase 연동 버전은 Google Firebase Analytics와 Crashlytics를 사용합니다. 사용 분석과 오류 진단 공유는 각각 기본적으로 꺼져 있으며 앱의 개인정보 설정에서 별도로 선택하고 철회할 수 있습니다. 두 선택은 기존 광고 설정과 별개이며, 동의하지 않아도 앱의 기본 기능을 사용할 수 있습니다. 사용 분석이 켜지면 앱 실행·세션, 앱/기기 정보, 앱 인스턴스 식별자와 IP 주소에서 추정한 대략적인 지역 등이 처리될 수 있습니다. 앱이 추가하는 이벤트는 고정된 이름과 분류값만 사용하며 자유 입력 검색어, 정확한 위치, 계정 정보나 개인 식별 정보를 이벤트 값으로 보내지 않습니다. Firebase 광고 ID 수집은 비활성화되어 있습니다.
+
+Crashlytics 오류 보고서는 오류 진단 공유가 꺼져 있어도 기기에 임시 저장될 수 있으며 자동 전송은 꺼져 있습니다. 별도로 동의했고 저장된 이전 동의 및 보고서 상태가 조건을 충족하는 경우에만 앱이 전송을 요청합니다. 전송 가능한 이전 동의를 확인할 수 없는 보고서는 보내지 않고 삭제를 요청합니다. 철회하면 앱은 새 분석 이벤트를 차단하고 SDK에 수집 중지와 동의 거부를 요청하며, 미전송 오류 보고서 삭제를 요청합니다. 이미 시작된 전송을 즉시 취소하거나 전송·삭제 완료를 확인할 수는 없습니다. 자세한 데이터 항목, 철회와 보관 설명은 [공통 Firebase 추가 고지](https://junhyuk.github.io/privacy/firebase-addendum/)를 참고하세요.
 
 ## 선택적인 장소 추가 요청
 
@@ -76,7 +80,7 @@ Sheets 운영 워크북에 기록됩니다. 앱에는 계정 생성이나 로그
 
 # Privacy Policy (English)
 
-Effective: 12 October 2026. This policy covers the Android app Frankfurt K-Life
+Revised: 18 October 2026. The Firebase notice below applies from the first Google Play version of this package that includes Firebase integration. This policy covers the Android app Frankfurt K-Life
 (`com.frankfurt.klife`), provided by DGY Creative Lab.
 Contact: <carpediem.jun7@gmail.com>.
 
@@ -96,9 +100,13 @@ sharing and email open external apps at the user's request. Their permissions,
 sign-in, cookies and connection logs are governed by their providers.
 See [Google's Privacy Policy](https://policies.google.com/privacy).
 
-The app includes no advertising SDK, advertising-ID collection, analytics SDK or
-automatic developer-server crash reporting. Android and Google Play services
-have their own data practices.
+Versions before Firebase integration include no advertising SDK, advertising-ID collection, analytics SDK or automatic developer-server crash reporting. The Firebase notice below applies from the first Google Play version of this package that includes Firebase integration. Android and Google Play services have their own data practices.
+
+## Optional Firebase analytics and diagnostics
+
+Firebase-enabled versions use Google Analytics for Firebase and Crashlytics. Analytics and diagnostic sharing are each off by default and can be chosen or withdrawn separately in the app's privacy settings. They are separate from advertising settings, and the app's core features remain available when either is off. When enabled, Analytics may process app launches and sessions, app/device information, an app instance identifier and a coarse region inferred from the IP address. App-defined events use fixed names and categories; the app does not put free-text searches, precise location, account information or personal identifiers in event values. Firebase Advertising ID collection is disabled.
+
+Crash reports may be stored temporarily on the device while diagnostic sharing is off; automatic upload is disabled. The app requests upload only after separate consent and when saved prior consent and report state meet the sending conditions. If permitted prior consent cannot be verified, the app does not request upload and asks the SDK to delete the report. On withdrawal, the app blocks new app-defined Analytics events, asks the SDK to stop collection and deny consent, and requests deletion of unsent crash reports. It cannot immediately cancel a transfer already in progress or confirm completion of a transmission or deletion. See the [common Firebase addendum](https://junhyuk.github.io/privacy/firebase-addendum/) for the data details, withdrawal and retention limits.
 
 Place suggestions are optional. The form asks for public place category, name,
 city, address, Korean-language availability, parking and family suitability.
@@ -125,7 +133,7 @@ encrypted or immediately erased. This page is updated when practices change.
 
 # Datenschutzerklärung (Deutsch)
 
-Gültig ab 12. Oktober 2026 für die Android-App Frankfurt K-Life
+Überarbeitet am 18. Oktober 2026. Der Firebase-Hinweis gilt ab der ersten Google-Play-Version dieses Pakets mit Firebase-Integration. Diese Erklärung gilt für die Android-App Frankfurt K-Life
 (`com.frankfurt.klife`) von DGY Creative Lab.
 Kontakt: <carpediem.jun7@gmail.com>.
 
@@ -147,9 +155,13 @@ E-Mail öffnen auf Wunsch externe Apps. Deren Berechtigungen, Anmeldung, Cookies
 und Protokolle richten sich nach den jeweiligen Anbietern.
 Siehe [Googles Datenschutzerklärung](https://policies.google.com/privacy).
 
-Die App enthält kein Werbe-SDK, keine Erfassung der Werbe-ID, kein Analyse-SDK
-und keine automatische Absturzmeldung an einen Entwicklerserver. Für Android
-und Google Play gelten deren eigene Datenschutzpraktiken.
+Versionen vor der Firebase-Integration enthalten kein Werbe-SDK, keine Erfassung der Werbe-ID, kein Analyse-SDK und keine automatische Absturzmeldung an einen Entwicklerserver. Der Firebase-Hinweis unten gilt ab der ersten Google-Play-Version dieses Pakets mit Firebase-Integration. Für Android und Google Play gelten deren eigene Datenschutzpraktiken.
+
+## Optionale Firebase-Nutzungsanalyse und Fehlerdiagnose
+
+Versionen mit Firebase verwenden Google Analytics for Firebase und Crashlytics. Analytics und die Freigabe von Diagnosedaten sind standardmäßig ausgeschaltet und können in den Datenschutzeinstellungen unabhängig voneinander ausgewählt oder widerrufen werden. Sie sind von den Werbeeinstellungen getrennt; die Grundfunktionen der App bleiben auch bei ausgeschalteten Optionen verfügbar. Bei aktivierter Nutzung können App-Starts und Sitzungen, App- und Geräteinformationen, eine App-Instanzkennung sowie eine aus der IP-Adresse abgeleitete grobe Region verarbeitet werden. Von der App definierte Ereignisse verwenden feste Namen und Kategorien. Freitextsuchen, genauer Standort, Kontoinformationen oder persönliche Kennungen werden nicht als Ereigniswerte gesendet. Die Erfassung der Firebase-Werbe-ID ist deaktiviert.
+
+Fehlerberichte können auch bei ausgeschalteter Diagnose vorübergehend auf dem Gerät gespeichert werden; der automatische Versand ist deaktiviert. Die App fordert den Versand nur nach gesonderter Einwilligung und bei erfüllten Prüfungen der gespeicherten vorherigen Einwilligung und des Berichtsstatus an. Lässt sich eine zulässige frühere Einwilligung nicht bestätigen, fordert die App keinen Versand an und bittet das SDK um Löschung. Nach einem Widerruf blockiert die App neue, von ihr definierte Analytics-Ereignisse, fordert das SDK zum Beenden der Erfassung und zur Ablehnung der Einwilligung auf und beantragt die Löschung noch nicht gesendeter Fehlerberichte. Eine laufende Übertragung kann nicht sofort abgebrochen und der Abschluss einer Übertragung oder Löschung nicht bestätigt werden. Weitere Angaben zu Daten, Widerruf und Aufbewahrungsgrenzen stehen in der [gemeinsamen Firebase-Ergänzung](https://junhyuk.github.io/privacy/firebase-addendum/).
 
 Ortsvorschläge sind freiwillig. Abgefragt werden öffentliche Kategorie, Name,
 Stadt, Adresse, Koreanischkenntnisse vor Ort, Parkmöglichkeiten und Eignung für

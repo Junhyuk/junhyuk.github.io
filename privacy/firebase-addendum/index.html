@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firebase 사용 분석 및 오류 진단 추가 고지 | DGY Creative Lab</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;margin:0;background:#f5f7fb;color:#1f2937;line-height:1.7}
+    main{max-width:920px;margin:0 auto;padding:28px 18px 56px}
+    h1{line-height:1.3}
+    section,.scope{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px;margin:18px 0}
+    .notice{background:#eff6ff;border-color:#bfdbfe}
+    table{width:100%;border-collapse:collapse}
+    th,td{text-align:left;border-bottom:1px solid #e5e7eb;padding:9px 8px;vertical-align:top}
+    code{overflow-wrap:anywhere}
+    nav a{margin-right:12px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Firebase 사용 분석 및 오류 진단 추가 고지</h1>
+  <p>최종 수정: 2026년 10월 18일</p>
+  <section class="scope notice">
+    <p><strong>적용 범위:</strong> 아래에 적은 16개 Google Play 패키지 중 Firebase Analytics와 Crashlytics 연동이 포함된 버전에만 적용됩니다. 각 앱에는 기존 앱별 개인정보처리방침도 함께 적용됩니다. 이 추가 고지는 Firebase 처리만 설명하며, 기존 앱의 광고, 버스·시세·콘텐츠 기능, GPS·저장 방식, 운영자 및 문의처를 대신하거나 서로 같다고 선언하지 않습니다.</p>
+    <p>각 패키지에는 Firebase 연동이 포함된 첫 Google Play 버전부터 적용됩니다. 이 목록에 있다는 이유만으로 현재 설치된 모든 버전에 Firebase SDK가 포함되어 있다고 단정하지 마세요.</p>
+    <table>
+      <thead><tr><th>앱</th><th>Google Play 패키지</th></tr></thead>
+      <tbody>
+        <tr><td>포항버스</td><td><code>com.DGY.Pohuang.Bustable</code></td></tr>
+        <tr><td>대전버스</td><td><code>com.DGY.Daejeon.Bustable</code></td></tr>
+        <tr><td>안동버스</td><td><code>com.DGY.Andong.Bustable</code></td></tr>
+        <tr><td>삼척버스</td><td><code>com.DGY.Samcheok.Bustable</code></td></tr>
+        <tr><td>영주버스 정보</td><td><code>com.DGY.Youngjo.Bustable</code></td></tr>
+        <tr><td>가락시장 농수산물 가격 예측</td><td><code>com.pricepred.garak</code></td></tr>
+        <tr><td>핫딜모아</td><td><code>com.ppompu.price</code></td></tr>
+        <tr><td>속초버스</td><td><code>com.DGY.SokCho.Bustable</code></td></tr>
+        <tr><td>원주버스</td><td><code>com.DGY.Wonju.Bustable</code></td></tr>
+        <tr><td>강릉버스</td><td><code>com.DGY.Gangneung.Bustable</code></td></tr>
+        <tr><td>대양청과·대구중앙청과</td><td><code>com.dgylab.daeyangfruit</code></td></tr>
+        <tr><td>안동농협공판장 시세</td><td><code>com.jun.andongNHFruit2</code></td></tr>
+        <tr><td>안동청과 시세</td><td><code>com.jun.andongFruit3</code></td></tr>
+        <tr><td>에어팟도우미</td><td><code>com.dgy.and_airpod</code></td></tr>
+        <tr><td>태백버스</td><td><code>com.DGY.Taebaek.Bustable</code></td></tr>
+        <tr><td>Frankfurt K-Life</td><td><code>com.frankfurt.klife</code></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <nav aria-label="Languages">
+    <a href="#ko">한국어</a><a href="#en">English</a><a href="#de">Deutsch</a>
+  </nav>
+
+  <section id="ko" lang="ko">
+    <h2>한국어</h2>
+    <h3>선택적인 사용 분석</h3>
+    <p>Firebase 연동 버전은 Google Firebase Analytics를 사용해 앱 이용 현황을 파악합니다. 사용 분석은 기본적으로 꺼져 있고 오류 진단 선택과 별개로 앱의 개인정보 설정에서 켜거나 끌 수 있습니다. 동의하지 않아도 앱의 기본 기능을 이용할 수 있습니다. 사용 분석이 허용되면 앱 실행·세션, 앱/기기 정보, 앱 인스턴스 식별자와 IP 주소에서 추정한 대략적인 지역 등이 Google Analytics에서 처리될 수 있습니다.</p>
+    <p>앱이 추가하는 이벤트는 정해진 이름과 고정된 분류값으로 제한합니다. 자유 입력 검색어, 노선·정류장·품목 상세 ID, 즐겨찾기 내용, 정확한 GPS 위치, URL, 이름, 이메일, 전화번호 또는 사용자 계정 ID를 Firebase 이벤트 값으로 보내지 않습니다. Firebase의 광고 ID 수집은 비활성화하고 광고 저장소·광고 사용자 데이터·광고 개인 최적화 동의를 거부 상태로 둡니다. 이 설정은 기존 AdMob 등 광고 SDK의 처리 범위를 바꾸지 않습니다.</p>
+
+    <h3>선택적인 오류 진단</h3>
+    <p>Firebase Crashlytics는 오류 발생 시점의 스택 추적, 앱 상태와 버전, 운영체제·기기 정보, 설치 식별자 및 관련 세션 진단 정보를 처리할 수 있습니다. 오류 보고서는 진단 공유가 꺼져 있어도 앱 전용 저장공간에 임시 저장될 수 있습니다. 자동 전송은 꺼져 있습니다. 진단 공유를 별도로 허용하고, 저장된 이전 동의와 보고서 처리 상태가 전송 조건을 충족하는 경우에만 앱이 전송을 요청합니다. 허용된 이전 동의를 확인할 수 없는 보고서는 전송하지 않고 삭제를 요청합니다. 새로 진단 공유를 켰다고 모든 기존 보고서가 곧바로 전송되는 것은 아닙니다.</p>
+
+    <h3>철회, 기기 저장 및 보관</h3>
+    <p>선택을 철회하면 앱은 새 앱 정의 분석 이벤트 전송 요청을 차단하고 Analytics에 수집 중지와 동의 거부를 요청합니다. 진단 공유를 끄면 이후 공유 조건을 닫고 미전송 오류 보고서의 삭제를 요청합니다. SDK 내부 처리나 이미 시작된 네트워크 전송을 즉시 취소하거나, 삭제·전송이 완료됐는지 확인할 수는 없습니다. 이미 요청된 전송은 철회 뒤에도 완료될 수 있습니다.</p>
+    <p>선택과 미전송 보고서는 기기에 저장될 수 있으며 다음 실행 때 다시 읽어 적용합니다. Android 앱 정보에서 앱 데이터를 삭제하거나 앱을 삭제하면 해당 기기의 저장 정보를 제거할 수 있지만, 이미 Google에 전달된 정보가 삭제되거나 진행 중인 전송이 취소되는 것은 보장되지 않습니다. Google이 처리하는 정보의 보관 및 삭제는 관련 서비스 정책과 실제 설정에 따릅니다. 이 문서는 확인되지 않은 보관 기간이나 삭제 완료를 약속하지 않습니다. 문의는 각 앱의 기존 개인정보처리방침에 기재된 운영자 연락처로 해 주세요.</p>
+    <p>Play Data Safety 신고는 앱의 실제 SDK 설정과 모든 배포 버전을 확인해 운영자가 별도로 검토해야 합니다. 이 고지는 설문 답변이나 제출을 대신하지 않습니다.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>English</h2>
+    <h3>Optional usage analytics</h3>
+    <p>Firebase-enabled versions use Google Analytics for Firebase to understand app usage. Analytics is off by default and can be enabled or disabled separately from diagnostics in the app's privacy settings. The app's core features remain available when it is off. When enabled, Google Analytics may process app launches and sessions, app and device information, an app instance identifier, and a coarse region inferred from the IP address.</p>
+    <p>App-defined events use predefined names and fixed categories. The app does not put free-text searches, detailed route, stop or item IDs, favorites, precise GPS location, URLs, names, email addresses, phone numbers or account IDs in Firebase event values. Firebase Advertising ID collection is disabled, and Firebase ad storage, ad user data and ad personalization consent remain denied. This does not change what existing AdMob or other advertising SDKs may process.</p>
+
+    <h3>Optional crash diagnostics</h3>
+    <p>Firebase Crashlytics may process a crash stack trace, app state and version, operating-system and device information, an installation identifier, and related session diagnostics. An unsent report may be stored temporarily in app-private storage even while diagnostics is off. Automatic upload is disabled. The app requests upload only when diagnostics is separately enabled and the saved prior consent and report state meet the sending conditions. If permitted prior consent cannot be verified for a report, the app does not request upload and asks the SDK to delete it. Enabling diagnostics does not immediately send every existing report.</p>
+
+    <h3>Withdrawal, local storage and retention</h3>
+    <p>After withdrawal, the app blocks requests for new app-defined Analytics events and asks Analytics to stop collection and deny consent. Turning diagnostics off closes the app's future sharing conditions and requests deletion of unsent crash reports. The app cannot immediately cancel SDK processing or a network transfer already in progress, and it cannot confirm that a deletion or transmission has completed. A transfer already requested may finish after withdrawal.</p>
+    <p>Choices and unsent reports may be stored on the device and read again at the next launch. Clearing app data or uninstalling can remove that device's app storage, but does not guarantee deletion of information already sent to Google or cancellation of a transfer in progress. Google's service policies and the actual service settings govern retention and deletion. This notice promises no unverified retention period or completed deletion. For questions or requests, use the contact in the app's existing privacy policy.</p>
+    <p>The app owner must separately review Google Play Data Safety answers against the actual SDK settings and every distributed app version. This notice does not complete or submit that form.</p>
+  </section>
+
+  <section id="de" lang="de">
+    <h2>Deutsch</h2>
+    <h3>Optionale Nutzungsanalyse</h3>
+    <p>Versionen mit Firebase verwenden Google Analytics for Firebase, um die App-Nutzung zu verstehen. Analytics ist standardmäßig ausgeschaltet und kann in den Datenschutzeinstellungen unabhängig von der Diagnose ein- oder ausgeschaltet werden. Die Grundfunktionen der App bleiben verfügbar, wenn Analytics ausgeschaltet ist. Bei aktivierter Nutzung können App-Starts und Sitzungen, App- und Geräteinformationen, eine App-Instanzkennung sowie eine aus der IP-Adresse abgeleitete grobe Region durch Google Analytics verarbeitet werden.</p>
+    <p>Von der App hinzugefügte Ereignisse verwenden festgelegte Namen und feste Kategorien. Freitextsuchen, detaillierte Linien-, Haltestellen- oder Artikel-IDs, Favoriten, genauer GPS-Standort, URLs, Namen, E-Mail-Adressen, Telefonnummern und Kontokennungen werden nicht als Firebase-Ereigniswerte gesendet. Die Erfassung der Firebase-Werbe-ID ist deaktiviert; die Zustimmung zu Firebase-Werbespeicherung, Werbenutzerdaten und personalisierter Werbung bleibt verweigert. Die Verarbeitung durch vorhandene AdMob- oder andere Werbe-SDKs wird dadurch nicht geändert.</p>
+
+    <h3>Optionale Fehlerdiagnose</h3>
+    <p>Firebase Crashlytics kann einen Fehler-Stacktrace, App-Status und -Version, Betriebssystem- und Geräteinformationen, eine Installationskennung sowie zugehörige Sitzungsdiagnosen verarbeiten. Ein noch nicht gesendeter Bericht kann auch bei ausgeschalteter Diagnose vorübergehend im privaten App-Speicher liegen. Der automatische Versand ist deaktiviert. Die App fordert den Versand nur an, wenn die Diagnose gesondert aktiviert ist und die gespeicherte vorherige Einwilligung sowie der Berichtsstatus die Versandbedingungen erfüllen. Lässt sich eine zulässige frühere Einwilligung für einen Bericht nicht bestätigen, fordert die App keinen Versand an und bittet das SDK um Löschung. Das Aktivieren der Diagnose sendet nicht sofort alle vorhandenen Berichte.</p>
+
+    <h3>Widerruf, lokale Speicherung und Aufbewahrung</h3>
+    <p>Nach einem Widerruf blockiert die App Anfragen für neue, von der App definierte Analytics-Ereignisse und fordert Analytics auf, die Erfassung zu beenden und die Einwilligung abzulehnen. Wird die Diagnose ausgeschaltet, schließt die App künftige Freigabebedingungen und fordert die Löschung noch nicht gesendeter Fehlerberichte an. Die App kann SDK-interne Vorgänge oder eine bereits laufende Netzwerkübertragung nicht sofort abbrechen und den Abschluss einer Löschung oder Übertragung nicht bestätigen. Eine bereits angeforderte Übertragung kann nach dem Widerruf abgeschlossen werden.</p>
+    <p>Auswahl und nicht gesendete Berichte können auf dem Gerät gespeichert und beim nächsten Start erneut gelesen werden. Das Löschen der App-Daten oder die Deinstallation kann den lokalen App-Speicher dieses Geräts entfernen; eine Löschung bereits an Google übermittelter Informationen oder der Abbruch einer laufenden Übertragung wird dadurch nicht garantiert. Für Aufbewahrung und Löschung gelten die Richtlinien und tatsächlichen Einstellungen der Google-Dienste. Diese Mitteilung verspricht weder eine ungeprüfte Aufbewahrungsfrist noch eine abgeschlossene Löschung. Für Fragen und Anträge gilt die Kontaktadresse in der bestehenden Datenschutzerklärung der jeweiligen App.</p>
+    <p>Der App-Anbieter muss die Google-Play-Angaben zur Datensicherheit anhand der tatsächlichen SDK-Einstellungen und aller veröffentlichten App-Versionen gesondert prüfen. Diese Mitteilung ersetzt das Formular nicht und reicht es nicht ein.</p>
+  </section>
+
+  <footer>
+    <p>Google: <a href="https://policies.google.com/privacy">Privacy Policy</a> · <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> · <a href="https://firebase.google.com/docs/android/play-data-disclosure">Firebase Android SDK data disclosure</a></p>
+    <p><a href="https://junhyuk.github.io/privacy/">영주버스 및 공통 정책 링크</a> · <a href="https://junhyuk.github.io/privacy/frankfurt-klife/">Frankfurt K-Life 정책</a></p>
+  </footer>
+</main>
+</body>
+</html>
