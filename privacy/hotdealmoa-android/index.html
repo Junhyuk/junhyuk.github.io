@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="핫딜모아 Android 앱의 개인정보처리방침: 공개 게시글과 댓글, 기기 저장, Google 광고, 선택적 Firebase 분석 및 오류 진단에 관한 안내입니다.">
+  <title>핫딜모아 Android 개인정보처리방침 | DGY Creative Lab</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin:0; background:#f5f7fb; color:#1f2937; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif; line-height:1.8; }
+    main { max-width:850px; margin:0 auto; padding:32px 18px 64px; }
+    header,section { background:#fff; border:1px solid #dfe4ec; border-radius:16px; padding:24px; margin:18px 0; }
+    h1 { margin:0 0 16px; font-size:1.8rem; line-height:1.4; }
+    h2 { margin:0 0 12px; font-size:1.2rem; }
+    p { margin:12px 0; }
+    ul { padding-left:22px; }
+    a { color:#1d4ed8; text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:focus-visible { outline:3px solid #1d4ed8; outline-offset:3px; }
+    code { overflow-wrap:anywhere; }
+    .meta { color:#4b5563; font-size:.95rem; }
+    footer { padding:8px 4px; }
+    @media (max-width:480px) { header,section { padding:20px; } h1 { font-size:1.55rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>핫딜모아 Android 개인정보처리방침</h1>
+    <p class="meta">시행일 · 최종 수정일: <time datetime="2026-10-19">2026년 10월 19일</time><br>
+      적용 앱: 핫딜모아 Android · <code>com.ppompu.price</code><br>
+      적용 버전: 버전 코드 11 / 버전 이름 1.7.3부터</p>
+    <p>핫딜모아는 공개된 핫딜과 인기 게시글을 모아 보여주는 앱입니다. 이 방침은 Android 앱의 콘텐츠 조회, 기기 저장, 광고, 선택적 사용 분석 및 오류 진단을 설명합니다.</p>
+    <p><strong>운영자:</strong> DGY Creative Lab<br>
+      <strong>문의:</strong> <a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a></p>
+  </header>
+
+  <section aria-labelledby="local">
+    <h2 id="local">1. 기기에 저장하는 정보</h2>
+    <p>앱은 회원가입이나 사용자 계정 없이 이용할 수 있습니다. 조회한 핫딜 목록과 캐시, 북마크, 화면·알림·개인정보 선택 등 앱 설정은 기능 제공과 다음 실행 시 복원을 위해 기기에 저장합니다. 검색어는 앱 안에서 목록을 필터링하는 데 사용합니다.</p>
+    <p>Android의 백업·복원 기능에 따라 일부 앱 데이터가 사용자의 백업 저장소에 포함되거나 새 기기에 복원될 수 있습니다. 백업은 기기와 Google 계정의 백업 설정에서 관리할 수 있습니다.</p>
+  </section>
+
+  <section aria-labelledby="content">
+    <h2 id="content">2. 공개 게시글과 댓글, 외부 링크</h2>
+    <p>앱은 뽐뿌와 뽐뿌 인기글, 클리앙, 퀘이사존 등 외부 커뮤니티의 공개 게시글을 조회합니다. 뽐뿌·뽐뿌 인기글의 댓글 미리보기는 공개 JSON 응답을 페이지 단위로 가져와 닉네임, 작성 시각, 댓글 본문을 표시합니다. 이때 원문 서버에는 이용 기기의 IP 주소와 요청한 게시글 식별자·페이지 등의 웹 요청 정보가 전달될 수 있습니다.</p>
+    <p>댓글 조회를 위해 로그인하거나 작성자의 프로필을 별도로 조회하지 않습니다. 댓글 미리보기는 앱 메모리에서 처리하며 운영자 서버로 수집·저장하지 않습니다. 앱 프로세스가 종료되면 해당 메모리 내용도 제거됩니다. 원문의 수정·삭제 여부는 다시 조회할 때 확인되며, 미리보기가 항상 최신 상태임을 보장하지 않습니다.</p>
+    <p>원문·판매처·제휴 링크를 열면 해당 사이트로 이동합니다. 링크에는 상품·게시글 식별자나 제휴 경유 정보가 포함될 수 있으며, 이동한 사이트의 쿠키와 정보 처리는 그 운영자의 방침을 따릅니다.</p>
+  </section>
+
+  <section aria-labelledby="ads">
+    <h2 id="ads">3. Google 광고</h2>
+    <p>앱은 Google Mobile Ads SDK(AdMob)를 통해 <strong>배너 광고, 네이티브 광고, 전면 광고</strong>를 표시합니다. Google은 광고 제공, 광고 성과 분석, 부정 사용 방지를 위해 다음 정보를 수집·공유할 수 있습니다.</p>
+    <ul>
+      <li>IP 주소와 이를 통해 추정하는 대략적인 지역</li>
+      <li>앱 실행, 탭, 광고·동영상 조회 등의 이용·상호작용 정보</li>
+      <li>앱과 SDK의 성능, 실행 시간, 오류·멈춤 등의 진단 정보</li>
+      <li>Android 광고 ID, 앱 세트 ID 등 기기·계정 관련 식별자</li>
+    </ul>
+    <p>이 처리는 기기 설정, 동의 상태, 광고 제공 방식 등에 따라 달라질 수 있습니다. 앱은 광고를 위해 정확한 GPS 위치 권한을 요청하지 않습니다. Google의 설명은 <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 공개 안내</a>와 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+    <p>앱은 Google UMP를 통해 필요한 광고 동의 상태를 확인하고, 광고 요청이 허용된 상태에서 광고를 요청합니다. 제공되는 동의 화면과 개인정보 옵션은 지역 및 Google의 요구 사항에 따라 달라집니다. 필요한 경우 앱의 광고 개인정보 옵션에서 선택을 다시 확인·변경할 수 있습니다. Android 설정에서도 광고 ID의 재설정·삭제 등 Google 광고 관련 제어 기능을 이용할 수 있습니다.</p>
+  </section>
+
+  <section aria-labelledby="firebase">
+    <h2 id="firebase">4. 선택적인 사용 분석과 오류 진단</h2>
+    <p>Firebase Analytics 사용 분석은 기본적으로 꺼져 있으며, 앱의 개인정보 설정에서 별도로 동의한 경우 활성화됩니다. 허용하면 앱 실행·세션, 앱·기기 정보, 앱 인스턴스 식별자와 IP 주소로 추정한 대략적인 지역 등이 Google에서 처리될 수 있습니다. 동의하지 않아도 핫딜 조회 등 기본 기능을 사용할 수 있습니다.</p>
+    <p>Firebase Crashlytics 오류 진단의 자동 전송은 꺼져 있습니다. 오류 보고서는 진단 공유가 꺼져 있어도 앱 전용 저장공간에 임시 저장될 수 있습니다. 진단 공유를 별도로 허용하고 저장된 이전 동의 및 보고서 상태가 전송 조건을 충족할 때만 앱이 전송을 요청합니다. 이전의 허용된 동의를 확인할 수 없는 보고서는 삭제를 요청합니다. 진단 공유를 새로 켰다고 모든 기존 보고서가 전송되지는 않습니다.</p>
+    <p>분석과 진단의 정보 항목, 철회 및 미전송 보고서 처리에 관한 자세한 내용은 <a href="https://junhyuk.github.io/privacy/firebase-addendum/">Firebase 사용 분석 및 오류 진단 추가 고지</a>를 함께 확인해 주세요. Firebase 선택은 Google 광고 동의와 별개입니다. Firebase의 광고 ID 수집과 광고 관련 동의는 비활성화·거부 상태로 유지하며, 이 설정이 AdMob의 처리 범위를 대신하지는 않습니다.</p>
+    <p><strong>앱은 댓글 본문·닉네임·검색어를 사용자 정의 분석 이벤트나 광고 타기팅 값으로 SDK에 전달하지 않습니다.</strong></p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">5. 네트워크 전송과 보안</h2>
+    <p>공개 댓글 요청에는 HTTPS를 사용합니다. Google 광고 SDK가 수집하는 정보는 Google의 안내에 따라 TLS로 전송됩니다. Firebase 서비스 통신에도 HTTPS/TLS를 사용합니다. 외부 원문·판매처로 이동한 뒤의 통신은 해당 주소와 사이트 설정에 따르며, 외부 링크에는 HTTP 주소가 포함될 수 있습니다.</p>
+    <p>Google 등 외부 서비스의 정보 처리는 해당 서비스의 운영 환경과 개인정보처리방침을 따르며 해외 서버에서 이루어질 수 있습니다.</p>
+  </section>
+
+  <section aria-labelledby="retention">
+    <h2 id="retention">6. 보관, 삭제 및 선택 철회</h2>
+    <p>기기의 목록·설정·북마크·캐시는 기능에 필요한 동안 보관하거나 갱신합니다. Android 앱 정보에서 앱 데이터를 삭제하거나 앱을 삭제하여 해당 기기의 앱 저장 정보를 제거할 수 있습니다. 백업본과 복원은 Android·Google 계정의 백업 설정에서도 확인해 주세요.</p>
+    <p>앱의 개인정보 설정에서 사용 분석과 진단 공유를 각각 끌 수 있습니다. 앱은 새 사용자 정의 분석 이벤트 요청을 차단하고 Analytics에 수집 중지와 동의 거부를 요청합니다. 진단 공유를 끄면 이후 공유 조건을 닫고 미전송 보고서의 삭제를 요청합니다.</p>
+    <p>이미 Google에 전달된 정보, SDK 내부 처리, 진행 중인 전송은 앱 데이터 삭제나 동의 철회만으로 즉시 삭제·중단되는 것이 보장되지 않습니다. 외부 서비스가 보관하는 정보의 기간과 삭제는 해당 서비스 정책과 실제 설정에 따릅니다. 운영자는 확인되지 않은 일괄 보관 기간이나 삭제 완료를 약속하지 않습니다.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">7. 문의와 방침 변경</h2>
+    <p>개인정보 처리, 앱에 표시되는 공개 콘텐츠, 정보 삭제에 관해 문의하려면 <a href="mailto:carpediem.jun7@gmail.com">carpediem.jun7@gmail.com</a>으로 연락해 주세요. 이메일 문의에 포함된 주소와 내용은 답변 및 후속 지원에 필요한 범위에서 처리합니다. 원문 게시글·댓글 자체의 수정이나 삭제는 해당 커뮤니티 운영자에게도 요청해야 합니다.</p>
+    <p>앱 기능이나 정보 처리 방식이 변경되면 이 페이지의 내용과 수정일을 갱신합니다. 다른 플랫폼의 기존 안내는 <a href="https://junhyuk.github.io/hotdealmoa/privacy/">기존 핫딜모아 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+  </section>
+
+  <footer><a href="https://junhyuk.github.io/hotdealmoa/">핫딜모아 안내</a> · DGY Creative Lab</footer>
+</main>
+</body>
+</html>
