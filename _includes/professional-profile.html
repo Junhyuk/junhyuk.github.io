@@ -1,0 +1,304 @@
+<style>
+  .profile-home {
+    margin-bottom: 2.5em;
+    line-height: 1.65;
+  }
+
+  .profile-home section + section {
+    margin-top: 2.5em;
+  }
+
+  .profile-home .profile-name {
+    margin-bottom: 0.25em;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .profile-home h2:not(.profile-name) {
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .profile-home h3 {
+    margin: 0 0 0.25em;
+    font-size: 1.05em;
+  }
+
+  .profile-home .profile-headline {
+    margin-top: 0;
+    font-size: 1.15em;
+    font-weight: 600;
+  }
+
+  .profile-home .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.25em;
+  }
+
+  .profile-home .profile-role {
+    margin-bottom: 1.5em;
+    padding-left: 1em;
+    border-left: 3px solid #e5e5e5;
+  }
+
+  .profile-home .profile-meta {
+    margin: 0 0 0.5em;
+    color: #646769;
+    font-size: 0.85em;
+  }
+
+  .profile-home .profile-role ul {
+    margin: 0;
+    padding-left: 1.2em;
+  }
+
+  .profile-home .profile-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    padding: 0;
+    list-style: none;
+  }
+
+  .profile-home .profile-skills li {
+    padding: 0.2em 0.6em;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.25em;
+    font-size: 0.85em;
+  }
+
+  .profile-home .profile-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22em), 1fr));
+    gap: 1.5em;
+  }
+
+  .profile-home .profile-video {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .profile-home .profile-video-frame {
+    width: 100%;
+    aspect-ratio: 504 / 399;
+  }
+
+  .profile-home .profile-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .profile-home .profile-video figcaption {
+    margin-top: 0.6em;
+    font-size: 0.85em;
+  }
+
+  .profile-home .profile-video figcaption p {
+    margin: 0.3em 0;
+  }
+
+  .profile-home .profile-patents {
+    padding-left: 1.3em;
+  }
+
+  .profile-home .profile-patents li {
+    margin-bottom: 1em;
+    overflow-wrap: anywhere;
+  }
+
+  .profile-home .profile-patents .profile-meta {
+    display: block;
+    margin-top: 0.25em;
+  }
+
+  @media (max-width: 40em) {
+    .profile-home .profile-role {
+      padding-left: 0.75em;
+    }
+  }
+</style>
+
+<div class="profile-home">
+  <section aria-labelledby="profile-intro">
+    {% if include.name_heading == 2 %}
+    <h2 class="profile-name" id="profile-intro">Junhyuk Lee</h2>
+    {% else %}
+    <h1 class="profile-name" id="profile-intro">Junhyuk Lee</h1>
+    {% endif %}
+    <p class="profile-headline">ARM CME · On-device AI · SW/HW Co-design &amp; Evaluation</p>
+    <p>I currently focus on ARM CME, on-device AI software, and SW/HW co-design and evaluation. My experience at Samsung Electronics spans mobile NPU architecture and evaluation, AI frameworks, application processors, and multimedia optimization.</p>
+    <p class="profile-links">
+      <a href="mailto:carpediem.jun7@gmail.com">Email</a>
+      <a href="https://github.com/Junhyuk">GitHub</a>
+      <a href="https://www.linkedin.com/in/junhyuk-lee-9a044a64/">LinkedIn</a>
+      {% if include.videos %}
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      {% else %}
+      <a href="{{ '/' | relative_url }}#profile-videos">View video demos</a>
+      {% endif %}
+    </p>
+  </section>
+
+  <section aria-labelledby="profile-experience">
+    <h2 id="profile-experience">Experience</h2>
+    <p>Samsung Electronics</p>
+
+    <article class="profile-role">
+      <h3>Principal Engineer</h3>
+      <p class="profile-meta">Mar 2023–Present</p>
+      <ul>
+        <li>Mobile NPU architecture and evaluation, including work with AI frameworks.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Software Engineer</h3>
+      <p class="profile-meta">Aug 2019–Present</p>
+      <ul>
+        <li>Mobile NPU model optimization and hardware analysis based on mobile use-case requirements.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Senior Software Engineer</h3>
+      <p class="profile-meta">Feb 2009–Present</p>
+      <ul>
+        <li>Application processor system analysis and benchmarking using C/C++ and Python, including Neural Engine hardware IP and Qualcomm SNPE evaluation.</li>
+        <li>TensorFlow Mobile/Lite performance and power evaluation, on-device personalization, and participation in Samsung Mobile's MLPerf efforts.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Creative Lead</h3>
+      <p class="profile-meta">Aug 2018–Jul 2019 · Samsung C-Lab, Photo Teller</p>
+      <ul>
+        <li>Led Photo Teller, using CNN, Word2Vec, and FastText, with TensorFlow/Keras for CNN/LSTM text generation on Android.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Technical Business Manager</h3>
+      <p class="profile-meta">May 2015–Jun 2017 · Samsung Electronics GmbH, Frankfurt</p>
+      <ul>
+        <li>Coordinated with headquarters, supported carriers and B2B customers, and worked on local adaptation and technical workshops.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Software Engineer</h3>
+      <p class="profile-meta">Jun 2012–May 2015</p>
+      <ul>
+        <li>Application processor solutions and wearable audio, including Yamaha Y831 bring-up.</li>
+      </ul>
+    </article>
+
+    <article class="profile-role">
+      <h3>Software Engineer</h3>
+      <p class="profile-meta">Feb 2009–Jun 2012</p>
+      <ul>
+        <li>Tizen multimedia, Twitter, and instant messaging applications.</li>
+      </ul>
+    </article>
+
+    <h3>Expertise</h3>
+    <ul class="profile-skills">
+      <li>C/C++</li>
+      <li>Python</li>
+      <li>Linux</li>
+      <li>TensorFlow / TensorFlow Lite</li>
+      <li>Keras</li>
+      <li>NPU architecture and evaluation</li>
+      <li>Audio codec / BSP</li>
+    </ul>
+
+    <h3>Credentials</h3>
+    <ul>
+      <li>Samsung SW Certification Pro</li>
+      <li>Data Science Level 2 · Sep 2024</li>
+      <li>OPIc AL · Jul 2017</li>
+    </ul>
+  </section>
+
+  {% if include.videos %}
+  <section aria-labelledby="profile-videos">
+    <h2 id="profile-videos">Videos</h2>
+    <div class="profile-videos">
+      <figure class="profile-video">
+        <div class="profile-video-frame">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7436949126228905984?compact=1" width="504" height="399" loading="lazy" title="S26: 1.5B sLM on CPU video demonstration" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <strong><a href="{{ '/videos/s26-slm-cpu/' | relative_url }}">S26: 1.5B sLM on CPU</a></strong>
+          <p>A CPU demonstration of a 1.5B small language model on S26. Video: 0:19.</p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7436949161242935296/">Watch the original on LinkedIn</a>
+        </figcaption>
+      </figure>
+
+      <figure class="profile-video">
+        <div class="profile-video-frame">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7432489718933569536?compact=1" width="504" height="399" loading="lazy" title="Flip6: 1.8B sLM on CPU video demonstration" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <strong><a href="{{ '/videos/flip6-slm-cpu/' | relative_url }}">Flip6: 1.8B sLM on CPU</a></strong>
+          <p>A CPU demonstration of a 1.8B small language model on Flip6. Video: 1:04.</p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7432489776420675584/">Watch the original on LinkedIn</a>
+        </figcaption>
+      </figure>
+
+      <figure class="profile-video">
+        <div class="profile-video-frame">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7057184766558683137?compact=1" width="504" height="399" loading="lazy" title="PyTorch Mobile CPU video demonstration" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+          <strong><a href="{{ '/videos/pytorch-mobile-cpu/' | relative_url }}">PyTorch Mobile CPU demo</a></strong>
+          <p>A demonstration of PyTorch Mobile running on CPU. Video: 0:15.</p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7057184778696982529/">Watch the original on LinkedIn</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  {% endif %}
+
+  <section aria-labelledby="profile-patents">
+    <h2 id="profile-patents">Selected Patents</h2>
+    <p>I have filed 15+ patent applications. Selected publications and granted patents are listed below.</p>
+    <ol class="profile-patents">
+      <li>
+        <a href="https://patents.google.com/patent/US20240202590A1/en">Electronic device and operation method of electronic device for performing calculation using artificial intelligence model</a>
+        <span class="profile-meta">US20240202590A1 · Patent application publication</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/KR20240026050A/en">Apparatus and method for determining a learning model for learning</a>
+        <span class="profile-meta">KR20240026050A · Patent application publication</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/US11899884B2/en">Electronic device and method of recognizing a force touch, by electronic device</a>
+        <span class="profile-meta">US11899884B2 · Granted patent document</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/US11467642B2/en">Electronic apparatus and controlling method thereof</a>
+        <span class="profile-meta">US11467642B2 · Granted patent document</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/US20240077970A1/en">Electronic device and learning model determination method for learning of electronic device</a>
+        <span class="profile-meta">US20240077970A1 · Patent application publication</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/US20230072337A1/en">Electronic device for processing neural network model and method of operating the same</a>
+        <span class="profile-meta">US20230072337A1 · Patent application publication</span>
+      </li>
+      <li>
+        <a href="https://patents.google.com/patent/US11874995B2/en">Electronic device identifying force touch and method for operating the same</a>
+        <span class="profile-meta">US11874995B2 · Granted patent document</span>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/junhyuk-lee-9a044a64/details/patents/">Smart Alarm service using emoticon in instant messenger</a>
+        <span class="profile-meta">J2011-07-5800 · LinkedIn reference</span>
+      </li>
+    </ol>
+  </section>
+</div>

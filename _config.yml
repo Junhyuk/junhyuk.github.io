@@ -20,7 +20,7 @@ title                    : "Junhyuk Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Junhyuk Lee"
-description              : "SW / HW Co-design Engineer focused on mobile NPU architecture and evaluation, on-device AI, and multimedia optimization."
+description              : "Focused on ARM CME, on-device AI software, and SW/HW co-design and evaluation."
 url                      : "https://junhyuk.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Junhyuk Lee"
   avatar           : "https://user-images.githubusercontent.com/5698411/75115269-21cc1380-56a0-11ea-99ce-108123acbf12.png" # path of avatar image, e.g. "/assets/images/bio_image.jpg"
-  bio              : "SW / HW Co-design Engineer"
+  bio              : "ARM CME · On-device AI · SW/HW Co-design & Evaluation"
   location         : "South Korea"
   email            :
   links:
