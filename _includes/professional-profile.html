@@ -212,6 +212,7 @@
       <li>Keras</li>
       <li>NPU architecture and evaluation</li>
       <li>Audio codec / BSP</li>
+      <li>Arm FVP / AOSP bring-up</li>
     </ul>
 
     <h3>Credentials</h3>
@@ -220,6 +221,17 @@
       <li>Data Science Level 2 · Sep 2024</li>
       <li>OPIc AL · Jul 2017</li>
     </ul>
+  </section>
+
+  <section aria-labelledby="profile-engineering-work">
+    <h2 id="profile-engineering-work">Engineering Work</h2>
+    <h3>Arm FVP / Android Platform Bring-up</h3>
+    <p>Investigated Android Open Source Project (AOSP) bring-up on Arm Fixed Virtual Platforms (FVP), tracing boot dependencies across kernel and init, APEX and linker namespaces, ART/JNI, framework services, and graphics. Documented startup and application-launch trace variability, including reproducibility factors such as runtime state, Binder activity, rendering, and scheduling.</p>
+    <ul>
+      <li>Recorded a successful FVP boot milestone in May 2026; follow-up platform patches were still required.</li>
+      <li>Analyzed service-loading and graphics initialization failures while distinguishing observed progress from planned stabilization work.</li>
+    </ul>
+    <p><a href="{{ '/work/fvp-android-bringup/' | relative_url }}">Read the detailed FVP work record</a>.</p>
   </section>
 
   {% if include.videos %}
