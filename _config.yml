@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Web Site Title"
+title                    : "Junhyuk Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Coding Blog"
-description              : "Personal website."
+name                     : "Junhyuk Lee"
+description              : "SW / HW Co-design Engineer focused on mobile NPU architecture and evaluation, on-device AI, and multimedia optimization."
 url                      : "https://junhyuk.github.io"  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,30 +107,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "Benchmarking"
+  name             : "Junhyuk Lee"
   avatar           : "https://user-images.githubusercontent.com/5698411/75115269-21cc1380-56a0-11ea-99ce-108123acbf12.png" # path of avatar image, e.g. "/assets/images/bio_image.jpg"
-  bio              : "engineer & coder"
-  location         : "Somewhere"
+  bio              : "SW / HW Co-design Engineer"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:carpediem.jun7@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/Junhyuk"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/junhyuk-lee-9a044a64/"
 
 # Site Footer
 footer:
