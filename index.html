@@ -4,4 +4,8 @@ author_profile: true
 ---
 {% if paginator.page == 1 or paginator == nil %}
 {% include professional-profile.html videos=true name_heading=1 %}
+<section class="home-featured-work" aria-labelledby="featured-airpods-title">
+  <h2 id="featured-airpods-title"><a href="{{ '/work/airpods-android/' | relative_url }}">Android에서 AirPods를 이해하고 제어하기</a></h2>
+  <p>BLE 광고와 연결된 기기의 배터리 상태를 구분하고, AAP/L2CAP으로 듣기 모드 응답을 확인하는 Android 앱의 구현과 실기기 검증 범위를 정리했습니다.</p>
+</section>
 {% endif %}
