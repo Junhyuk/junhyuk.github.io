@@ -1,0 +1,42 @@
+.airpods-intro { font-size: 1.18em; line-height: 1.8; }
+.airpods-cta { display: flex; flex-wrap: wrap; gap: .6em; margin: 1.5em 0; }
+.airpods-cta .btn { margin: 0; }
+.airpods-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2em; margin: 1.5em 0; }
+.airpods-gallery figure { min-width: 0; margin: 0; }
+.airpods-gallery img { display: block; width: 100%; height: auto; border: 1px solid #777; border-radius: .35em; }
+.airpods-gallery figcaption { margin-top: .6em; font-size: .88em; line-height: 1.6; }
+.airpods-video { max-width: 25em; margin: 1.5em auto; }
+.airpods-video video { display: block; width: 100%; height: auto; background: #101114; border-radius: .35em; }
+.airpods-video figcaption { margin-top: .7em; font-size: .88em; line-height: 1.7; }
+body:has(.airpods-intro) .page__content { overflow-wrap: anywhere; word-break: keep-all; }
+body:has(.airpods-intro) .page__title { word-break: keep-all; overflow-wrap: normal; }
+body:has(.airpods-intro) .page__content table { display: block; max-width: 100%; overflow-x: auto; font-size: .82em; }
+body:has(.airpods-intro) .page__content th:first-child,
+body:has(.airpods-intro) .page__content td:first-child { min-width: 6em; }
+body:has(.airpods-intro) .page__content pre { word-break: normal; overflow-wrap: normal; }
+body:has(.airpods-intro) .page__content .highlighter-rouge { font-size: .76em; }
+@media (max-width: 480px) { .airpods-gallery { grid-template-columns: 1fr; max-width: 22em; margin-inline: auto; } }
+@media (max-width: 63.99em) { body:has(.airpods-intro) .toc { max-height: 16em; overflow-y: auto; } }
+@media (prefers-color-scheme: dark) {
+  body:has(.airpods-intro) { background: #17191c; color: #e5e7eb; }
+  body:has(.airpods-intro) .masthead { background: #17191c; border-color: #515760; }
+  body:has(.airpods-intro) .greedy-nav { background: #17191c; }
+  body:has(.airpods-intro) .masthead a,
+  body:has(.airpods-intro) .author__urls a { color: #e5e7eb; }
+  body:has(.airpods-intro) .page__title,
+  body:has(.airpods-intro) .page__title a,
+  body:has(.airpods-intro) .author__name,
+  body:has(.airpods-intro) .page__content h2,
+  body:has(.airpods-intro) .page__content h3 { color: #e5e7eb; }
+  body:has(.airpods-intro) .page__meta,
+  body:has(.airpods-intro) .author__urls .fas,
+  body:has(.airpods-intro) .author__urls .fab { color: #b8c1cd; }
+  body:has(.airpods-intro) .airpods-cta .btn:not(.btn--primary) { color: #8cc8ff; }
+  body:has(.airpods-intro) .page__content a:not(.btn) { color: #8cc8ff; }
+  body:has(.airpods-intro) .toc { background: #22262b; border-color: #515760; color: #e5e7eb; }
+  body:has(.airpods-intro) .toc .nav__title { background: #353b44; }
+  body:has(.airpods-intro) .toc a { color: #e5e7eb; }
+  body:has(.airpods-intro) .page__content :not(pre) > code { background: #30353d; color: #f1f3f5; }
+  body:has(.airpods-intro) .page__content th { background: #30353d; color: #f1f3f5; }
+  body:has(.airpods-intro) .page__footer { background: #22262b; color: #d3d8df; }
+}

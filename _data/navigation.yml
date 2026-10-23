@@ -1,3 +1,5 @@
 main:
   - title: "About"
     url: /about/
+  - title: "AirPods Android"
+    url: /work/airpods-android/
