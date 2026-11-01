@@ -11,7 +11,7 @@ author_profile: false
 
 DGY Creative Lab이 제공하는 Android 앱 Frankfurt K-Life
 (`com.frankfurt.klife`)에 적용됩니다.
-개인정보 및 앱 이용 문의: <junhyuk7.lee@gmail.com>
+개인정보 및 앱 이용 문의: <carpediem.jun7@gmail.com>
 
 ## 기기에 저장하는 정보
 
@@ -67,7 +67,7 @@ Sheets 운영 워크북에 기록됩니다. 앱에는 계정 생성이나 로그
 
 ## 문의, 수정과 삭제 요청
 
-<junhyuk7.lee@gmail.com>으로 문의·정정·삭제 요청을 보낼 수 있습니다.
+<carpediem.jun7@gmail.com>으로 문의·정정·삭제 요청을 보낼 수 있습니다.
 익명 응답을 찾을 수 있도록 제출 시각과 장소명 등 필요한 최소 정보만
 알려주세요. 개발자가 관리하는 응답은 식별 가능한 범위에서 검토하며,
 법령상 보존 의무 등 제한이 있으면 설명합니다. 이메일 문의 시 회신 주소와
@@ -82,7 +82,7 @@ Sheets 운영 워크북에 기록됩니다. 앱에는 계정 생성이나 로그
 
 Revised: 18 October 2026. The Firebase notice below applies from the first Google Play version of this package that includes Firebase integration. This policy covers the Android app Frankfurt K-Life
 (`com.frankfurt.klife`), provided by DGY Creative Lab.
-Contact: <junhyuk7.lee@gmail.com>.
+Contact: <carpediem.jun7@gmail.com>.
 
 The app does not require an account. Downloaded public place information,
 favorite place IDs, first-launch and synchronization settings remain in app
@@ -135,7 +135,7 @@ encrypted or immediately erased. This page is updated when practices change.
 
 Überarbeitet am 18. Oktober 2026. Der Firebase-Hinweis gilt ab der ersten Google-Play-Version dieses Pakets mit Firebase-Integration. Diese Erklärung gilt für die Android-App Frankfurt K-Life
 (`com.frankfurt.klife`) von DGY Creative Lab.
-Kontakt: <junhyuk7.lee@gmail.com>.
+Kontakt: <carpediem.jun7@gmail.com>.
 
 Die App benötigt kein Benutzerkonto. Öffentliche Ortsdaten, gespeicherte Orts-IDs,
 Erststart- und Synchronisierungseinstellungen bleiben im App-Speicher.

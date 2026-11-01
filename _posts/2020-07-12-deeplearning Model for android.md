@@ -28,7 +28,7 @@ Andorid NN 과 Pytroch Android 가 pixel image processing  처리를 위한 andr
 
 
 혹시 간단한 질문이나 설명이 필요하시면 댓글이나 메일 남겨 주십시요.
-junhyuk7.lee@gmail.com
+carpediem.jun7@gmail.com
 
 Cartoon sample image #1
 ![sample2](https://user-images.githubusercontent.com/5698411/87249662-43853600-c49b-11ea-90df-8a5130f756b9.png)
